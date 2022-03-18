@@ -33,12 +33,16 @@ Users can next authenticate throught jdbc url via beeline or jdbc client.
 
 ### Authorization
 
-In hive the authorization mecanism is handle by another process of authentication describe here:
+In hive the authorization mechanism is handle by another process of the authentication one. Authorization is describe here:
 
 https://cwiki.apache.org/confluence/display/Hive/LanguageManual+Authorization
 
 Majors alternatives are:
+
+handle by hivemetastore:
 - Storage Based Authorization protection rules based on HDFS permission of the user on the location of the hive table. But be aware that it seems that this mecanism is coupled to kerberos not sur how to use or reimplement if cloud storage is s3.
+
+handle by the engine:
 - SQL Standard base but then authorization is handle by the engine.
 - Ranger plugin that continously pull policy from a central management of user policy for the hive service.
 
