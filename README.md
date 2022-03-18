@@ -40,7 +40,8 @@ https://cwiki.apache.org/confluence/display/Hive/LanguageManual+Authorization
 Majors alternatives are:
 
 handle by hivemetastore:
-- Storage Based Authorization protection rules based on HDFS permission of the user on the location of the hive table. But be aware that it seems that this mecanism is coupled to kerberos not sur how to use or reimplement if cloud storage is s3.
+- Storage Based Authorization protection rules based on HDFS permission of the user on the location of the hive table. But be aware that it seems that this mechanism is coupled to kerberos not sur how to use or reimplement if cloud storage is s3.
+However, with some work this mechanism is made by a pre.event.listener on the metastore where we could also inject our custom logic.
 
 handle by the engine:
 - SQL Standard base but then authorization is handle by the engine.
