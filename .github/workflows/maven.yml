@@ -16,7 +16,7 @@ jobs:
 
     steps:
     - name: Install prerequisites
-        run: |
+      run: |
           sudo wget https://dl.min.io/client/mc/release/linux-amd64/mc && \
           sudo chmod +x mc && \
           sudo mv mc /usr/local/bin/mc
