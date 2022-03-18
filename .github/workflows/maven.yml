@@ -29,5 +29,6 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: Push to S3
       run: |
+          ls ~
           mc alias set s3 ${{ secrets.AWS_S3_ENDPOINT }} ${{ secrets.AWS_ACCESS_KEY_ID }} ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           mc cp ~/target/hive-authentication-1.0-SNAPSHOT.jar s3/projet-onyxia/spark-build/hive-authentication.jar
