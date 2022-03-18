@@ -19,13 +19,13 @@ Add this jar to the hive lib classpath and then in the engine add:
 
 ### Features
 
-- [x] Just five an example based on username hiveuser password hive
+- [x] Just give an example based on an inmemory username hiveuser password hive
 
-### Features possible 
+### Possible features 
 
 - [ ] Can add username password base on bcrypt file content available on the host or in a conf property 
-- [ ] Can add username password with password being a jwt token
-- [ ] Can add username password with password being a jwt refreshtoken
+- [ ] Can add username password with password being a jwt token 
+- [ ] Can add username password with password being a jwt tojken with expiration to refresh ( not sur if possible and how)
 
 ### Authentication
 
